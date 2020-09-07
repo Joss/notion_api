@@ -15,5 +15,8 @@ Simple Notion.so API to add a note into selected page
 7. Add `<your_heroku_link>/add_block` or `<your_heroku_link>/add_page` to URL
 8. Select `Post` method
 9. Select `application/json` content type
-10. Add `{"token":"<token_v2>", "link":"<page_link>", "note":"<<<{{Body}}>>>", "title":"<<<{{Subject}}>>>}` as body
+10. Add `{"token":"<token_v2>", "link":"<page_link>", "note":"<<<{{Body}}>>>", "title":"<<<{{Subject}}>>>"}` as body
 
+### Testing
+
+1. Forward an email from your mailbox to `trigger@applet.ifttt.com`
