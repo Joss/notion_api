@@ -31,5 +31,7 @@ Simple Notion.so API to add a note into selected page by email
 - Select `application/json` content type
 - Add `{"token":"<token_v2>", "link":"<page_link>", "note":"<<<{{Body}}>>>", "title":"<<<{{Subject}}>>>"}` as body
 
+<img width="500px" src="https://user-images.githubusercontent.com/9437720/92419570-0aa1ce80-f177-11ea-9156-9c4f92d58efa.png?raw=true">
+
 ### Testing
 1. Forward an email from your mailbox to `trigger@applet.ifttt.com`
