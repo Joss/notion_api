@@ -1,5 +1,5 @@
-# notion_api
-Simple Notion.so API to add a note into selected page
+# Simple Notion API
+Simple Notion.so API to add a note into selected page by email
 
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
