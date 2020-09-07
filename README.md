@@ -23,7 +23,7 @@ Simple Notion.so API to add a note into selected page by email
 <p align="left">
   <img src="https://user-images.githubusercontent.com/9437720/92417016-c7d8fa00-f168-11ea-8540-710a9c979cb2.png" />
 </p>
-4. Select `Send IFTTT any email`
+4. Select `Send IFTTT any email` 
 5. Add `Webhooks` as action service
 <p align="left">
   <img src="https://user-images.githubusercontent.com/9437720/92417019-cc051780-f168-11ea-960d-7878b75244ed.png" />
