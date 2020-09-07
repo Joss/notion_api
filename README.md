@@ -9,15 +9,18 @@ Simple Notion.so API to add a note into selected page by email
 3. Choose an app name and select prefered region for server
 ![2020-09-08_00h06_51](https://user-images.githubusercontent.com/9437720/92416668-416fe880-f167-11ea-9ede-ed1b96b5b158.png)
 4. Press `Deploy` button
-5. 
+5. Press the `View` button and keep a web link to app url
+![2020-09-08_00h10_49](https://user-images.githubusercontent.com/9437720/92416811-f2768300-f167-11ea-9afb-cc3e445988e9.png)
 
 ### Configure IFTTT
 
 1. Goto https://ifttt.com/
-2. Press `Create`
+2. Login and press `Create`
 3. Add `Email` as service
+
 4. Select `Send IFTTT any email`
 5. Add `Webhooks` as action service
+
 6. Select `Make a web request`
 7. Add `<your_heroku_link>/add_block` or `<your_heroku_link>/add_page` to URL
 8. Select `Post` method
