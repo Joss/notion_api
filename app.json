@@ -1,0 +1,6 @@
+{
+  "name": "Notion.so simple API",
+  "description": "Simple unofficial API for Notion.so",
+  "repository": "https://github.com/Joss/notion_api",
+  "keywords": ["notion", "notion.so", "heroku", "ifttt"]
+}
