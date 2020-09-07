@@ -7,13 +7,13 @@ Simple Notion.so API to add a note into selected page
 ### Configure IFTTT
 
 1. Goto https://ifttt.com/
-2. Create
+2. Press `Create`
 3. Add `Email` as service
 4. Select `Send IFTTT any email`
 5. Add `Webhooks` as action service
 6. Select `Make a web request`
 7. Add `<your_heroku_link>/add_url` to URL
-   Select `Post` method
-   Select `application/json` content type
-   Add `{"token":"<token_v2>", "link":"<page_link>", "note":"<<<{{Body}}>>>"}` as body
+7.1. Select `Post` method
+7.2. Select `application/json` content type
+7.3. Add `{"token":"<token_v2>", "link":"<page_link>", "note":"<<<{{Body}}>>>"}` as body
 
