@@ -7,8 +7,9 @@ Simple Notion.so API to add a note into selected page by email
 - Press the button above
 - Create a new Herocu account, confirm the email
 - Choose an app name and select prefered region for server
-![2020-09-08_00h06_51](https://user-images.githubusercontent.com/9437720/92416668-416fe880-f167-11ea-9ede-ed1b96b5b158.png)
-<img width="15%" height="15%" src="https://user-images.githubusercontent.com/9437720/92416668-416fe880-f167-11ea-9ede-ed1b96b5b158.png?raw=true">
+
+<img width="400px" src="https://user-images.githubusercontent.com/9437720/92416668-416fe880-f167-11ea-9ede-ed1b96b5b158.png?raw=true">
+
 - Press `Deploy app` button
 - Press the `View` button and keep a web link to app url
 
