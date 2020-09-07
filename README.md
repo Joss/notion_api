@@ -4,6 +4,13 @@ Simple Notion.so API to add a note into selected page by email
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+1. Press the button above
+2. Create a new Herocu account, confirm the email
+3. Choose an app name and select prefered region for server
+![2020-09-08_00h06_51](https://user-images.githubusercontent.com/9437720/92416668-416fe880-f167-11ea-9ede-ed1b96b5b158.png)
+4. Press `Deploy` button
+5. 
+
 ### Configure IFTTT
 
 1. Goto https://ifttt.com/
