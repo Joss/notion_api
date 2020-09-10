@@ -26,7 +26,7 @@ Simple Notion.so API to add a note into selected page by email
 <img width="500px" src="https://user-images.githubusercontent.com/9437720/92417019-cc051780-f168-11ea-960d-7878b75244ed.png?raw=true">
 
 - Select `Make a web request`
-- Add `<web_link_to_app>/add_block` (if you prefer collect all emails on one page as blocks) or `<web_link_to_app>/add_page` (if you want to keep emails as separate pages) to URL
+- Add `<web_link_to_app>/add_block` (if you prefer collect all emails on one page as blocks), `<web_link_to_app>/add_page` (if you want to keep emails as separate pages) or `<web_link_to_app>/add_record` (if you want to add emails as records with columnns `Header`, `Text`, `Date`) to URL
 - Select `Post` method
 - Select `application/json` content type
 - Add `{"token":"<token_v2>", "link":"<page_link>", "note":"<<<{{Body}}>>>", "title":"<<<{{Subject}}>>>"}` as body

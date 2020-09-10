@@ -6,9 +6,10 @@ from notion.block import TextBlock, PageBlock
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
-    return "<h1>Notion API</h1><p>Use /add_block or /add_page</p>"
+    return "<h1>Notion API</h1><p>Use /add_block, /add_page or add_record</p>"
 
 @app.route('/add_block', methods=['POST'])
 def add_block():
@@ -48,6 +49,26 @@ def add_page():
         return 'The page added', 200
     except Exception:
         return 'Adding the page failed', 500        
+
+@app.route('/add_record', methods=['POST'])
+def add_record():
+    try:
+        token_v2 = request.json['token']
+        notebook_link = request.json['link']
+        note_title = request.json['title']
+        note_text = request.json['note']
+
+        client = NotionClient(token_v2)
+        cv = client.get_collection_view(notebook_link)
+
+        row = cv.collection.add_row()
+        row.Header = note_title
+        row.Text = note_text
+        row.Date = date.today()
+
+        return 'The record added', 200
+    except Exception:
+        return 'Adding the record failed', 500            
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)        
