@@ -1,7 +1,7 @@
 from datetime import date
 
 from notion.client import NotionClient
-from notion.block import TextBlock, PageBlock 
+from notion.block.basic import TextBlock, PageBlock 
 
 from flask import Flask, request, jsonify
 app = Flask(__name__)
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "<h1>Notion API</h1><p>Use /add_block, /add_page or add_record</p>"
+    return "<h1>Notion API</h1><p>Use /add_block, /add_page or /add_record</p>"
 
 @app.route('/add_block', methods=['POST'])
 def add_block():
@@ -61,10 +61,8 @@ def add_record():
         client = NotionClient(token_v2)
         cv = client.get_collection_view(notebook_link)
 
-        row = cv.collection.add_row()
-        row.Header = note_title
-        row.Text = note_text
-        row.Date = date.today()
+        print(cv.parent.views)
+        cv.collection.add_row(Header=note_title, Message=note_text, Date=date.today())
 
         return 'The record added', 200
     except Exception:
